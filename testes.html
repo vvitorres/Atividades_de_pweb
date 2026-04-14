@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Meu Site com Guias</title>
+    <style>
+        /* Um pouco de estilo para parecer abas de verdade */
+        body { font-family: sans-serif; padding: 20px; }
+        
+        .menu-guias { margin-bottom: 20px; }
+        
+        button {
+            padding: 10px 20px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background: #f0f0f0;
+        }
+
+        .conteudo {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Gerenciador de Abas</h2>
+
+    <div class="menu-guias">
+        <button onclick="mudarGuia('home')">Home</button>
+        <button onclick="mudarGuia('perfil')">Perfil</button>
+        <button onclick="mudarGuia('config')">Configurações</button>
+    </div>
+
+    <div id="home" class="conteudo">
+        <h3>🏠 Página Inicial</h3>
+        <p>Bem-vindo ao sistema! Esta é a sua tela principal.</p>
+    </div>
+
+    <div id="perfil" class="conteudo" style="display:none">
+        <h3>👤 Seu Perfil</h3>
+        <p>Nome: Aluno Dedicado<br>Status: Aprendendo HTML.</p>
+    </div>
+
+    <div id="config" class="conteudo" style="display:none">
+        <h3>⚙️ Configurações</h3>
+        <p>Aqui você pode mudar as cores e preferências do site.</p>
+    </div>
+
+    <script>
+        function mudarGuia(idDaGuia) {
+            // Primeiro: Escondemos todas as divs que têm a classe 'conteudo'
+            var todasAsGuias = document.getElementsByClassName("conteudo");
+            for (var i = 0; i < todasAsGuias.length; i++) {
+                todasAsGuias[i].style.display = "none";
+            }
+
+            // Segundo: Mostramos apenas a div que tem o ID que passamos no botão
+            document.getElementById(idDaGuia).style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
