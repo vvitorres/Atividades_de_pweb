@@ -24,15 +24,24 @@
         <tr style="vertical-align: top; background-color: #2d0000;">
             <th style="width: 15%; ">
                 <table style="width: 100%;">
-                    <tr id="aba-curriculo" style="background-color:#FFD700">
+                    <tr id="aba-curriculo" style="background-color:#FFD700"> 
                         <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick="
-                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700';
+                            onclick=" /*Professor, lembre que a gente dscutiu sobre esse assunto em sala e o senhor deixou eu usar.*/
+                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700'; /*Deixa o botão do currículo claro quando ele é clicado */
+                            document.getElementById('aba-hobbies').style.backgroundColor='#2d0000'; /*Deixa o botão de hobbies escuro quando o botão do currículo é clicado */
+                            document.getElementById('texto-curriculo').style.color='#000000'; /*Deixa o texto do botão do currículo preto quando ele é clicado */
+                            document.getElementById('texto-hobbies').style.color='#B0B0B0'; /*Deixa o texto do botão de hobbies mais claro quando o botão de curriculo é apertado */
                             ">
                             <h2 id="texto-curriculo" style="color:#000000;">Currículo</h2></a> </th>
                     </tr>
                     <tr id="aba-hobbies">
-                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies">
+                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="
+                            document.getElementById('aba-hobbies').style.backgroundColor='#FFD700'; /*Deixa o botão de hobbies claro quando ele é clicado */
+                            document.getElementById('aba-curriculo').style.backgroundColor='#2d0000'; /*Deixa o botão do currículo escuro quando o botão de hobbies é clicado */
+                            document.getElementById('texto-hobbies').style.color='#000000'; /*Deixa o texto do botão de hobbies preto quando ele é clicado */
+                            document.getElementById('texto-curriculo').style.color='#B0B0B0'; /*Deixa o texto do botão do currículo mais claro quando o botão de hobbies é apertado */
+                            ">
                             <h2 id="texto-hobbies" style="color: #B0B0B0;">Hobbies</h2></a></th>
                     </tr>
                 </table>
