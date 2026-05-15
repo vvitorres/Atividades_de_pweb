@@ -1,0 +1,74 @@
+<!--Vitor Vinícius Porangaba Torres - 513-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site sobre mim</title>
+    <style>
+    table, tr, th{
+    border: 1px solid black; /*Deixa o table, tr, th com borda preta com uma linha sólida */
+    border-collapse: collapse; /*Mescla as bordas */
+    }
+    table{
+        margin: auto; /*Deixa a tabela centralizada */
+     }
+    </style>
+    <link rel="icon" type="image/x-icon" href="img/icom.ico">
+</head>
+<body style="background-image: url(img/fundo_geral2.png); background-size: 100%; background-attachment: fixed;">
+    <table style="width: 65%; height: 890px; margin-top: 25px; background-color: rgb(245, 245, 236); font-size: 100%;">
+        <tr style="background-color: #1a1a1a;">
+            <th colspan="2" style="height: 75px;"><h1 style="font-size: 300%;; color: #FFD700;">Um pouco sobre a minha vida</h1></th>
+        </tr>
+        <tr style="vertical-align: top; background-color: #2d0000;">
+            <th style="width: 15%; ">
+                <table style="width: 100%;">
+                    <tr id="aba-curriculo" style="background-color:#FFD700">
+                        <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="
+                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700';
+                            ">
+                            <h2 id="texto-curriculo" style="color:#000000;">Currículo</h2></a> </th>
+                    </tr>
+                    <tr id="aba-hobbies">
+                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies">
+                            <h2 id="texto-hobbies" style="color: #B0B0B0;">Hobbies</h2></a></th>
+                    </tr>
+                </table>
+            </th>
+            <td>
+                
+                <iframe src="curriculo.html" name="pagina_principal" style="width: 100%; height:100%;"></iframe>
+
+            </td>
+        </tr>
+        <tr style="background-color: #1a1a1a; color: #E0E0E0; vertical-align: top;">
+            <th colspan="2" style="height: 25px">
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Mais informações</th>
+                        <th>Contatos</th>
+                        <th>Links</th>
+                        <th>Projetos</th>
+                    </tr>
+                    <tr>
+                        <td>Nome: Vitor Vinícius Porangaba Torres</td>
+                        <td>Telefone: <a href="https://wa.me/qr/YSQABOCO2D2VC1" title="Contato do Whatsapp" target="_blank" style="color: #B0B0B0">+55 (82) 99914-0658</a></td>
+                        <td><a href="https://www.linkedin.com/in/vin%C3%ADcius-porangaba-torres-b8b19b40a/" title="Perfil do linkedin" target="_blank" style="color: #B0B0B0">Linkedin</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades_de_pweb/blob/main/Atividades/atv01_vitor_vinicius_p_torres/index.html" title="Projeto em HTML que mostra um Catálogo de livros para vender" target="_blank" style="color: #B0B0B0">Catálogo de livros</a></td>    
+
+                    </tr>
+                    <tr>
+                        <td>Turma: 513</td>
+                        <td>E-mail: <a href="mailto:vvpt1@aluno.ifal.edu.br" title="Meu E-mail" style="color: #B0B0B0">vvpt1@aluno.ifal.edu.br</a></td>
+                        <td><a href="https://github.com/vvitorres" title="Perfil do GitHub" target="_black" style="color: #B0B0B0">GitHub</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades-de-poo/blob/main/SRC/conta.py" title="Projeto de Back-end de um sistema bancário" target="_blank" style="color: #B0B0B0">Contas de bancos</a></td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+    
+</body>
+</html>
