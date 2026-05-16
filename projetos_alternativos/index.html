@@ -1,0 +1,75 @@
+<!--Vitor Vinícius POrangaba Torres - 513-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros certos</title>
+    <link rel="icon" type="image/x-icon" href="imagens/ico_livros.ico">
+    <style>
+    table, tr, th{
+    border: 1px solid black;
+    border-collapse: collapse;
+    }
+    table{
+        margin: auto;
+     }
+    </style>
+</head>
+<body style="background-image: url(imagens/fundo_geral.png); background-size: 100%; background-attachment: fixed;">
+    <table style="width: 70%; height: 855px; margin-top: 15px;">
+        <tr>
+            <th style="background-color: #1E4857;"><a href="principal.html" target="pagina_principal" title="Página inicial"> <img width="100%" src="imagens/home.png" alt="home"
+                onclick="
+                    document.getElementById('menu').style.border='none';
+                    "></a></th>
+            <th style="height: 100px; background-color: #1E4857; color: #F5F2EB;"><h1>Site de indicação de livros</h1></th>
+        </tr>
+        <tr style="vertical-align:auto;">
+            <th style="width: 11%; background-color: #3A3F47;">
+                <table id="menu" style="width: 100%; border: none;">
+                    <tr id="borda-romance">
+                        <th><a href="romance.html" target="pagina_principal" title="Livros de Romance"> <img width="100%" src="imagens/romance.jpg" alt="Romance"
+                            onclick="
+                                document.getElementById('borda-romance').style.border='4px solid #C5A059';"></a></th>
+                    </tr>
+                    <tr id="borda-catolicos">
+                        <th><a href="catolicos.html" target="pagina_principal" title="livros católicos"> <img width="100%" src="imagens/catolicos.png" alt="Livros Católicos"></a></th>
+                    </tr>
+                    <tr id="borda-fantasia">
+                        <th><a href="fantasia.html" target="pagina_principal" title="livros de Fantasia"> <img width="100%" src="imagens/fantasia.png" alt="Fantasia"></a></th>
+                    </tr>
+                    <tr id="borda-aventura">
+                        <th><a href="aventura.html" target="pagina_principal" title="livros de aventura"> <img width="100%" src="imagens/aventura.png" alt="Aventura"></a></th>
+                    </tr>
+                </table>
+            </th>
+            <th>
+                <iframe src="principal.html" name="pagina_principal" style="width: 100%; height:100%;"></iframe>
+            </th>
+        </tr>
+        <tr>
+            <th colspan="2" style="height: 50px; background-color: #1E4857; color: #F5F2EB;">                
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Mais informações</th>
+                        <th>Contatos</th>
+                        <th>Projetos</th>
+                    </tr>
+                    <tr>
+                        <td>Nome: Vitor Vinícius Porangaba Torres</td>
+                        <td>Telefone: <a href="https://wa.me/qr/YSQABOCO2D2VC1" title="Contato do Whatsapp" target="_blank" style="color: #B0B0B0">+55 (82) 99914-0658</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades_de_pweb/blob/main/Atividades/atv01_vitor_vinicius_p_torres/index.html" title="Projeto em HTML que mostra um Catálogo de livros para vender" target="_blank" style="color: #B0B0B0">Catálogo de livros</a></td>    
+
+                    </tr>
+                    <tr>
+                        <td>Turma: 513</td>
+                        <td>E-mail: <a href="mailto:vvpt1@aluno.ifal.edu.br" title="Meu E-mail" style="color: #B0B0B0">vvpt1@aluno.ifal.edu.br</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades-de-poo/blob/main/SRC/conta.py" title="Projeto de Back-end de um sistema bancário" target="_blank" style="color: #B0B0B0">Contas de bancos</a></td>
+                    </tr>
+                </table></th>
+        </tr>
+    </table>
+    
+</body>
+</html>
