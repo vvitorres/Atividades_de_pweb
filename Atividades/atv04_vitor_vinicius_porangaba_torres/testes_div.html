@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .meu_container {
+            width: 65%;
+            height: 900px;
+            margin-top: 30px; 
+            margin: auto;
+            background-color: rgb(245, 245, 236); 
+            font-size: 100%;
+            overflow: auto;
+        }
+        .meu_container div{
+            text-align: center;
+        }
+        #cabecalho {
+            font-size: 300%; 
+            color: #FFD700;
+            background-color: #1a1a1a;
+            height: 75px;
+        }
+        .barra_lateral {
+            width: 15%;
+            float: left;
+            background-color: #2d0000;
+            height: 800px;  
+        }
+        .barra_lateral div {
+            vertical-align: top;
+        }
+        #aba-curriculo {
+            background-color:#FFD700;
+        }
+        #texto-curriculo {
+            color: black;
+
+        }
+        #texto-hobbies {
+            color: #B0B0B0;
+        }
+        #conteudo {
+            height: 800px;
+        }
+        #rodape {
+            background-color: #1a1a1a;
+            color: #E0E0E0;
+            height: 25px;
+        }
+    </style>
+</head>
+<body>
+    <div class="meu_container">
+    <div id="cabecalho">olá</div>
+    <div class="barra_lateral">
+        <table style="width: 100%;">
+                    <tr id="aba-curriculo" style="background-color:#FFD700"> 
+                        <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick=" /*Professor, lembre que a gente dscutiu sobre esse assunto em sala e o senhor deixou eu usar.*/
+                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700'; /*Deixa o botão do currículo claro quando ele é clicado */
+                            document.getElementById('aba-hobbies').style.backgroundColor='#2d0000'; /*Deixa o botão de hobbies escuro quando o botão do currículo é clicado */
+                            document.getElementById('texto-curriculo').style.color='#000000'; /*Deixa o texto do botão do currículo preto quando ele é clicado */
+                            document.getElementById('texto-hobbies').style.color='#B0B0B0'; /*Deixa o texto do botão de hobbies mais claro quando o botão de curriculo é apertado */
+                            ">
+                            <h2 id="texto-curriculo" style="color:#000000;">Currículo</h2></a> </th>
+                    </tr>
+                    <tr id="aba-hobbies">
+                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="
+                            document.getElementById('aba-hobbies').style.backgroundColor='#FFD700'; /*Deixa o botão de hobbies claro quando ele é clicado */
+                            document.getElementById('aba-curriculo').style.backgroundColor='#2d0000'; /*Deixa o botão do currículo escuro quando o botão de hobbies é clicado */
+                            document.getElementById('texto-hobbies').style.color='#000000'; /*Deixa o texto do botão de hobbies preto quando ele é clicado */
+                            document.getElementById('texto-curriculo').style.color='#B0B0B0'; /*Deixa o texto do botão do currículo mais claro quando o botão de hobbies é apertado */
+                            ">
+                            <h2 id="texto-hobbies" style="color: #B0B0B0;">Hobbies</h2></a></th>
+                    </tr>
+                </table>
+    </div>
+    <div id="conteudo">guilherme gosta de lol</div>
+    <div id="rodape">email do chupa cunhao de caba do ifal: afal2@aluno.ifal.edu.br </div>
+    </div>
+</body>
+</html>
