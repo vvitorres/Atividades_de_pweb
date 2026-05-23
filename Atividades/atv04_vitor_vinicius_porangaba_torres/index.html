@@ -3,28 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Site sobre mim</title>
+    <link rel="icon" type="image/x-icon" href="img/icom.ico">
     <style>
         .meu_container {
             width: 65%;
-            height: 900px;
+            height: 950px;
             margin-top: 30px; 
             margin: auto;
             background-color: rgb(245, 245, 236); 
             font-size: 100%;
-            overflow: auto;
+            
         }
         .meu_container div{
             text-align: center;
+            overflow: hidden; /* Corta qualquer conteúdo que passe do tamanho da div */
         }
         #cabecalho {
             font-size: 300%; 
             color: #FFD700;
             background-color: #1a1a1a;
-            height: 75px;
+            height: 80px;
+        }
+        .grade {
+            display: grid;
+            grid-template-columns: 15% 85%;
         }
         .barra_lateral {
-            width: 15%;
             float: left;
             background-color: #2d0000;
             height: 800px;  
@@ -43,18 +48,20 @@
             color: #B0B0B0;
         }
         #conteudo {
-            height: 800px;
+            margin: auto;
+            width: 100%;
         }
         #rodape {
             background-color: #1a1a1a;
             color: #E0E0E0;
-            height: 25px;
+            height: 70px;
         }
     </style>
 </head>
-<body>
+<body style="background-image: url(img/fundo_geral2.png); background-size: 100%; background-attachment: fixed;">
     <div class="meu_container">
-    <div id="cabecalho">olá</div>
+    <div id="cabecalho">Um pouco sobre a minha vida</div>
+    <div class="grade">
     <div class="barra_lateral">
         <table style="width: 100%;">
                     <tr id="aba-curriculo" style="background-color:#FFD700"> 
@@ -79,8 +86,42 @@
                     </tr>
                 </table>
     </div>
-    <div id="conteudo">guilherme gosta de lol</div>
-    <div id="rodape">email do chupa cunhao de caba do ifal: afal2@aluno.ifal.edu.br </div>
+    <div id="conteudo">
+        <table style="width: 100%; height: 800px;">
+            <tr>
+                <th>
+                    <iframe src="curriculo.html" name="pagina_principal"  style="width: 100%; height: 100%;" title="Conteúdo"></iframe>
+                </th>
+            </tr>
+        </table>
+    </div>
+    </div>
+    <div id="rodape">
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Mais informações</th>
+                        <th>Contatos</th>
+                        <th>Links</th>
+                        <th>Projetos</th>
+                    </tr>
+                    <tr>
+                        <td>Nome: Vitor Vinícius Porangaba Torres</td>
+                        <td>Telefone: <a href="https://wa.me/qr/YSQABOCO2D2VC1" title="Contato do Whatsapp" target="_blank" style="color: #B0B0B0">+55 (82) 99914-0658</a></td>
+                        <td><a href="https://www.linkedin.com/in/vin%C3%ADcius-porangaba-torres-b8b19b40a/" title="Perfil do linkedin" target="_blank" style="color: #B0B0B0">Linkedin</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades_de_pweb/blob/main/Atividades/atv01_vitor_vinicius_p_torres/index.html" title="Projeto em HTML que mostra um Catálogo de livros para vender" target="_blank" style="color: #B0B0B0">Catálogo de livros</a></td>    
+
+                    </tr>
+                    <tr>
+                        <td>Turma: 513</td>
+                        <td>E-mail: <a href="mailto:vvpt1@aluno.ifal.edu.br" title="Meu E-mail" style="color: #B0B0B0">vvpt1@aluno.ifal.edu.br</a></td>
+                        <td><a href="https://github.com/vvitorres" title="Perfil do GitHub" target="_black" style="color: #B0B0B0">GitHub</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades-de-poo/blob/main/SRC/conta.py" title="Projeto de Back-end de um sistema bancário" target="_blank" style="color: #B0B0B0">Contas de bancos</a></td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+    </div>
     </div>
 </body>
 </html>
