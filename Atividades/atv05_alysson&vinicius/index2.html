@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meu Perfil</title>
+  <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+
+  <style>
+    body {
+      /* altera o background do site, forçando a imagem se manter proporcional */
+      background-image: url("img/background.jpg");
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    #cabecalho {
+      background-color: #0D1B2A;
+      width: 80%;
+      height: 80px;
+      margin: auto;
+      justify-content: center; 
+      place-items: center;
+      display: flex;
+    }
+
+    #rodape {
+      background-image: url(img/footer.jpeg);
+      background-size: contain;
+      height: 50px;
+      margin: auto;
+      width: 80%;
+    }
+
+    #container {
+      width: 80%;
+      margin: auto;
+      display: flex;
+    }
+    #menulateral {
+      background-color: #D9D9D9;
+      width: 15%;
+      height: 1000px;
+      text-align: center;
+    }
+    #conteudo {
+      background-color: white;
+      width: 85%;
+      height: 1000px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div id="cabecalho">
+    <h1 style="color: #FFD166;">Meu Perfil</h1>
+  </div>
+
+  <div id="container">
+    <div id="menulateral">
+      <p style="margin-top: 8px; margin-bottom: 8px;"><a href="curriculo.html" target="principal" title="Currículo">Currículo</a></p>
+      <p style="margin-top: 8px; margin-bottom: 8px;"><a href="musicas.html" target="principal" title="Músicas">Músicas</a></p>
+    </div>
+    <div id="conteudo">
+      <iframe src="curriculo.html" name="principal" frameborder="0" style="width: 100%; height: 1000px;"></iframe>
+    </div>
+  </div>
+
+  <div id="rodape">rodapé</div>
+</body>
+</html>
