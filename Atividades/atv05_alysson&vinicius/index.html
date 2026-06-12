@@ -1,0 +1,121 @@
+<!--Vitor Vinícius Porangaba Torres - 513 - atv04 -->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site sobre mim</title>
+    <link rel="icon" type="image/x-icon" href="img/icom.ico">
+    <style>
+        .meu_container { /*classe*/
+            width: 65%; /*Ajeita a largura total do div do corpo*/
+            height: 950px; /*Ajeita a altura total do div do corpo*/
+            margin-top: 30px; /*colocar uma margem no topo*/
+            margin: auto; /*Deixa a margem uniforme (tudo centralizado)*/
+            background-color: rgb(245, 245, 236); /*Muda o plano de fundo do div do corpo*/
+        }
+        .meu_container div{ /*classe*/
+            text-align: center; /*Alinha todo o texto no centro*/
+            overflow: hidden; /* Corta qualquer conteúdo que passe do tamanho da div */
+        }
+        #cabecalho { /*id*/
+            font-size: 300%; /*Aumenta o tamanho da fonte*/
+            color: #FFD700; /*Muda a cor do texto do cabeçalho*/
+            background-color: #1a1a1a; /*Muda a cor do plano de fundo do cabeçalho*/
+            height: 80px; /*Ajeita a altura total do cabeçalho*/
+        }
+        .grade { /*classe*/
+            display: grid; /*Organiza os elementos em uma grade*/
+            grid-template-columns: 15% 85%; /*Cria uma coluna com 15% do espaço e outra com 85%*/
+        }
+        .barra_lateral { /*classe*/
+            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
+            height: 814px;  /*Ajeita a altura total da barra lateral*/
+        }
+        .barra_lateral div { /*classe*/
+            vertical-align: top; /*Alinha o conteúdo do div ao topo*/
+        }
+        #aba-curriculo { /*id*/
+            background-color:#FFD700; /*Muda a cor do plano de fundo do botão currículo*/
+        }
+        #texto-curriculo { /*id*/
+            color: black; /*Muda a cor do texto do botão currículo*/
+
+        }
+        #texto-hobbies { /*id*/
+            color: #B0B0B0; /*Muda a cor do texto do botão hobbies*/
+        }
+        #conteudo { /*id*/
+            margin: 0; /*Deixa a margem uniforme (tudo centralizado)*/
+            width: 100%; /*Deixa a largura do conteúdo em 100%*/
+            border: none; /*Deixa sem borda*/
+            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
+        }
+        #rodape { /*id*/
+            background-color: #1a1a1a; /*Muda a cor do plano de fundo do rodapé*/
+            color: #E0E0E0; /*Muda a cor da fonte do rodapé*/
+            height: 70px; /*Ajeita a altura total do rodapé*/
+        }
+    </style>
+</head>
+<body style="background-image: url(img/fundo_geral2.png); background-size: 100%; background-attachment: fixed;">
+    <div class="meu_container">
+    <div id="cabecalho">Um pouco sobre a minha vida</div>
+    <div class="grade">
+    <div class="barra_lateral">
+        <table style="width: 100%;">
+                    <tr id="aba-curriculo" style="background-color:#FFD700"> 
+                        <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick=" /*Professor, lembre que a gente dscutiu sobre esse assunto em sala e o senhor deixou eu usar.*/
+                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700'; /*Deixa o botão do currículo claro quando ele é clicado */
+                            document.getElementById('aba-hobbies').style.backgroundColor='#2d0000'; /*Deixa o botão de hobbies escuro quando o botão do currículo é clicado */
+                            document.getElementById('texto-curriculo').style.color='#000000'; /*Deixa o texto do botão do currículo preto quando ele é clicado */
+                            document.getElementById('texto-hobbies').style.color='#B0B0B0'; /*Deixa o texto do botão de hobbies mais claro quando o botão de curriculo é apertado */
+                            ">
+                            <h2 id="texto-curriculo" style="color:#000000;">Currículo</h2></a> </th>
+                    </tr>
+                    <tr id="aba-hobbies">
+                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="
+                            document.getElementById('aba-hobbies').style.backgroundColor='#FFD700'; /*Deixa o botão de hobbies claro quando ele é clicado */
+                            document.getElementById('aba-curriculo').style.backgroundColor='#2d0000'; /*Deixa o botão do currículo escuro quando o botão de hobbies é clicado */
+                            document.getElementById('texto-hobbies').style.color='#000000'; /*Deixa o texto do botão de hobbies preto quando ele é clicado */
+                            document.getElementById('texto-curriculo').style.color='#B0B0B0'; /*Deixa o texto do botão do currículo mais claro quando o botão de hobbies é apertado */
+                            ">
+                            <h2 id="texto-hobbies" style="color: #B0B0B0;">Hobbies</h2></a></th>
+                    </tr>
+                </table>
+    </div>
+    <div id="conteudo">
+                    <iframe src="curriculo.html" name="pagina_principal"  style="border: none; width: 100%; height: 800px" title="Conteúdo"></iframe>
+    </div>
+    </div>
+    <div id="rodape">
+                <table style="width: 100%;">
+                    <tr>
+                        <th>Mais informações</th>
+                        <th>Contatos</th>
+                        <th>Links</th>
+                        <th>Projetos</th>
+                    </tr>
+                    <tr>
+                        <td>Nome: Vitor Vinícius Porangaba Torres</td>
+                        <td>Telefone: <a href="https://wa.me/qr/YSQABOCO2D2VC1" title="Contato do Whatsapp" target="_blank" style="color: #B0B0B0">+55 (82) 99914-0658</a></td>
+                        <td><a href="https://www.linkedin.com/in/vin%C3%ADcius-porangaba-torres-b8b19b40a/" title="Perfil do linkedin" target="_blank" style="color: #B0B0B0">Linkedin</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades_de_pweb/blob/main/Atividades/atv01_vitor_vinicius_p_torres/index.html" title="Projeto em HTML que mostra um Catálogo de livros para vender" target="_blank" style="color: #B0B0B0">Catálogo de livros</a></td>    
+
+                    </tr>
+                    <tr>
+                        <td>Turma: 513</td>
+                        <td>E-mail: <a href="mailto:vvpt1@aluno.ifal.edu.br" title="Meu E-mail" style="color: #B0B0B0">vvpt1@aluno.ifal.edu.br</a></td>
+                        <td><a href="https://github.com/vvitorres" title="Perfil do GitHub" target="_black" style="color: #B0B0B0">GitHub</a></td>
+                        <td><a href="https://github.com/vvitorres/Atividades-de-poo/blob/main/SRC/conta.py" title="Projeto de Back-end de um sistema bancário" target="_blank" style="color: #B0B0B0">Contas de bancos</a></td>
+                    </tr>
+                </table>
+            </th>
+        </tr>
+    </table>
+    </div>
+    </div>
+</body>
+</html>
