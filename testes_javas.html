@@ -1,0 +1,63 @@
+<style>
+.barra_lateral { /*classe*/
+            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
+            height: 814px;  /*Ajeita a altura total da barra lateral*/
+} 
+</style>
+
+<script>
+function myFunction(ativo, ativo2) {
+  var y = document.getElementsByClassName("texto");
+  var x = document.getElementsByClassName("botoes");
+  for (var i = 0; i < x.length; i++) {
+     
+    x[i].style.backgroundColor = "#2d0000";
+    y[i].style.color = "#B0B0B0";
+  }
+  document.getElementById(ativo).style.backgroundColor='#FFD700';
+  document.getElementById(ativo2).style.color='black';
+  
+}
+
+
+</script>
+
+<table class="barra_lateral" style="width: 60px;">
+                    <tr id="capa" class="botoes" style="background-color:#FFD700;"> 
+                        <th><a target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="myFunction('capa', 'texto-capa')
+                           
+                            ">
+                            <h2 id="texto-capa" style="color: black;" class="texto" >Capa</h2></a> </th>
+                    </tr>
+                    <tr id="aba-curriculo" class="botoes"> 
+                        <th>
+                            <h2 id="texto-curriculo"  style="color: #B0B0B0;" class="texto"><a  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="myFunction('aba-curriculo', 'texto-curriculo')
+                            
+                            ">Currículo</a> </h2></th>
+                    </tr>
+                    <tr id="aba-curriculo2" class="botoes"> 
+                        <th><a  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="myFunction('aba-curriculo2', 'texto-curriculo2')
+                            
+                            ">
+                            <h2 id="texto-curriculo2" style="color: #B0B0B0;" class="texto">Currículo2</h2></a> </th>
+                    </tr>
+                    <tr id="aba-hobbies" class="botoes">
+                        <th><a  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="myFunction('aba-hobbies', 'texto-hobbies')
+                            
+                            ">
+                            <h2 id="texto-hobbies" style="color: #B0B0B0;" class="texto">Hobbies</h2></a></th>
+                    </tr>
+                    
+                    <tr id="aba-musicas" class="botoes">
+                        <th><a  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="myFunction('aba-musicas', 'texto-musicas')
+                            
+                            ">
+                            <h2 id="texto-musicas" style="color: #B0B0B0;" class="texto">Musicas</h2></a></th>
+                    </tr>
+                </table>
+         

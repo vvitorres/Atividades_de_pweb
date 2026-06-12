@@ -1,0 +1,77 @@
+<style>
+    .barra_lateral { 
+        background-color: #2d0000; /* Muda a cor do plano de fundo da barra lateral */
+        height: 814px;  /* Ajeita a altura total da barra lateral */
+        width: 60px;
+        text-align: center;
+    } 
+
+    /* Adicionado para garantir que o cursor vire uma mãozinha ao passar por cima */
+    .botoes {
+        cursor: pointer;
+    }
+</style>
+
+<script>
+    function myFunction(ativo, ativo2) {
+        var y = document.getElementsByClassName("texto");
+        var x = document.getElementsByClassName("botoes");
+        
+        // CORREÇÃO: i < x.length em vez de i <= x.length
+        for (var i = 0; i < x.length; i++) {
+            x[i].style.backgroundColor = "#2d0000";
+            y[i].style.color = "#B0B0B0";
+        }
+        
+        // Aplica as cores de destaque na aba clicada
+        document.getElementById(ativo).style.backgroundColor = '#FFD700';
+        document.getElementById(ativo2).style.color = 'black';
+    }
+</script>
+
+<table class="barra_lateral">
+    <tr id="capa" class="botoes" style="background-color:#FFD700;"> 
+        <th>
+            <a target="pagina_principal" style="text-decoration: none;" title="Aba da Capa" onclick="myFunction('capa', 'texto-capa')">
+                <h2 id="texto-capa" style="color: black;" class="texto">Capa</h2>
+            </a> 
+        </th>
+    </tr>
+    <tr id="aba-curriculo" class="botoes"> 
+        <th>
+            <a target="pagina_principal" style="text-decoration: none;" title="Aba do currículo" onclick="myFunction('aba-curriculo', 'texto-curriculo')">
+                <h2 id="texto-curriculo" style="color: #B0B0B0;" class="texto">Currículo</h2>
+            </a> 
+        </th>
+    </tr>
+    <tr id="aba-curriculo2" class="botoes"> 
+        <th>
+            <a target="pagina_principal" style="text-decoration: none;" title="Aba do currículo 2" onclick="myFunction('aba-curriculo2', 'texto-curriculo2')">
+                <h2 id="texto-curriculo2" style="color: #B0B0B0;" class="texto">Currículo2</h2>
+            </a> 
+        </th>
+    </tr>
+    <tr id="aba-hobbies" class="botoes">
+        <th>
+            <a target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies" onclick="myFunction('aba-hobbies', 'texto-hobbies')">
+                <h2 id="texto-hobbies" style="color: #B0B0B0;" class="texto">Hobbies</h2>
+            </a>
+        </th>
+    </tr>
+    <tr id="aba-musicas" class="botoes">
+        <th>
+            <a target="pagina_principal" style="text-decoration: none;" title="Aba de músicas" onclick="myFunction('aba-musicas', 'texto-musicas')">
+                <h2 id="texto-musicas" style="color: #B0B0B0;" class="texto">Músicas</h2>
+            </a>
+        </th>
+    </tr>
+</table>
+
+<script>
+    // Define a aba inicial ativa via script (opcional, já que a "Capa" começa com o estilo inline)
+    var x = 'aba-musicas';
+    var y = 'texto-musicas'; 
+    
+    // Isso fará a aba músicas ficar ativa ao carregar a página e resetará a capa
+    myFunction(x, y);
+</script>
