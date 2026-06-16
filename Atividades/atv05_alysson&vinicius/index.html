@@ -6,27 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site sobre mim</title>
     <link rel="icon" type="image/x-icon" href="img/icom.ico">
-    <style>
+
+    <style id="estrutura">
         .meu_container { /*classe*/
             width: 65%; /*Ajeita a largura total do div do corpo*/
             height: 950px; /*Ajeita a altura total do div do corpo*/
             margin-top: 30px; /*colocar uma margem no topo*/
             margin: auto; /*Deixa a margem uniforme (tudo centralizado)*/
-            background-color: rgb(245, 245, 236); /*Muda o plano de fundo do div do corpo*/
         }
-        .meu_container div{ /*classe*/
+                .meu_container div{ /*classe*/
             text-align: center; /*Alinha todo o texto no centro*/
             overflow: hidden; /* Corta qualquer conteúdo que passe do tamanho da div */
         }
         #cabecalho { /*id*/
-            font-size: 300%; /*Aumenta o tamanho da fonte*/
-            color: #FFD700; /*Muda a cor do texto do cabeçalho*/
-            background-color: #1a1a1a; /*Muda a cor do plano de fundo do cabeçalho*/
             height: 80px; /*Ajeita a altura total do cabeçalho*/
+            font-size: 300%; /*Aumenta o tamanho da fonte*/
         }
         .grade { /*classe*/
             display: grid; /*Organiza os elementos em uma grade*/
             grid-template-columns: 15% 85%; /*Cria uma coluna com 15% do espaço e outra com 85%*/
+        }
+        #conteudo { /*id*/
+            margin: 0; /*Deixa a margem uniforme (tudo centralizado)*/
+            width: 100%; /*Deixa a largura do conteúdo em 100%*/
+            border: none; /*Deixa sem borda*/
+        }
+        #rodape { /*id*/
+            height: 70px; /*Ajeita a altura total do rodapé*/
+        }
+    </style>
+
+    <style id="tema_claro"> <!--Sua parte Alysson-->
+
+    </style>
+
+    <style id="tema_escuro">
+        .meu_container { /*classe*/
+            background-color: rgb(245, 245, 236); /*Muda o plano de fundo do div do corpo*/
+        }
+
+        #cabecalho { /*id*/
+            color: #FFD700; /*Muda a cor do texto do cabeçalho*/
+            background-color: #1a1a1a; /*Muda a cor do plano de fundo do cabeçalho*/
+            
         }
         .barra_lateral { /*classe*/
             background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
@@ -46,17 +68,29 @@
             color: #B0B0B0; /*Muda a cor do texto do botão hobbies*/
         }
         #conteudo { /*id*/
-            margin: 0; /*Deixa a margem uniforme (tudo centralizado)*/
-            width: 100%; /*Deixa a largura do conteúdo em 100%*/
-            border: none; /*Deixa sem borda*/
             background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
         }
         #rodape { /*id*/
             background-color: #1a1a1a; /*Muda a cor do plano de fundo do rodapé*/
             color: #E0E0E0; /*Muda a cor da fonte do rodapé*/
-            height: 70px; /*Ajeita a altura total do rodapé*/
         }
     </style>
+    <script>
+function myFunction(ativo, ativo2) {
+  var y = document.getElementsByClassName("texto");
+  var x = document.getElementsByClassName("botoes");
+  for (var i = 0; i < x.length; i++) {
+     
+    x[i].style.backgroundColor = "#2d0000";
+    y[i].style.color = "#B0B0B0";
+  }
+  document.getElementById(ativo).style.backgroundColor='#FFD700';
+  document.getElementById(ativo2).style.color='black';
+  
+}
+
+
+</script>
 </head>
 <body style="background-image: url(img/fundo_geral2.png); background-size: 100%; background-attachment: fixed;">
     <div class="meu_container">
@@ -64,58 +98,31 @@
     <div class="grade">
     <div class="barra_lateral">
         <table style="width: 100%;">
-                    <tr id="capa"> 
-                        <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick=" 
-                            document.getElementById('capa').style.backgroundColor='#FFD700'; /*Deixa o botão do capa claro quando ele é clicado */
-                            document.getElementById('aba-hobbies').style.backgroundColor='#2d0000'; /*Deixa o botão de hobbies escuro quando o botão do currículo é clicado */
-                            document.getElementById('texto-capa').style.color='#000000'; /*Deixa o texto do botão do capa preto quando ele é clicado */
-                            document.getElementById('texto-hobbies').style.color='#B0B0B0'; /*Deixa o texto do botão de hobbies mais claro quando o botão de curriculo é apertado */
-                            ">
-                            <h2 id="texto-capa">Capa</h2></a> </th>
+                    <tr id="capa" class="botoes" style="background-color:#FFD700;"> 
+                        <th><h2 target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="myFunction('capa', 'texto-capa')"><a id="texto-capa" style="color: black;" class="texto" >Capa</a></h2></th>
                     </tr>
-                    <tr id="aba-curriculo"> 
-                        <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick="
-                            document.getElementById('capa').style.backgroundColor='#2d0000'; /*Deixa o botão da capa escuro quando o botão do currículo é clicado */ 
-                            document.getElementById('texto-capa').style.color='#B0B0B0'; /*Deixa o texto do botão da capa mais claro quando o botão de curriculo é apertado */
-                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700'; /*Deixa o botão do currículo claro quando ele é clicado */
-                            document.getElementById('aba-hobbies').style.backgroundColor='#2d0000'; /*Deixa o botão de hobbies escuro quando o botão do currículo é clicado */
-                            document.getElementById('texto-curriculo').style.color='#000000'; /*Deixa o texto do botão do currículo preto quando ele é clicado */
-                            document.getElementById('texto-hobbies').style.color='#B0B0B0'; /*Deixa o texto do botão de hobbies mais claro quando o botão de curriculo é apertado */
-                            ">
-                            <h2 id="texto-curriculo" style="color: #B0B0B0;">Currículo</h2></a> </th>
+                    <tr id="aba-curriculo" class="botoes"> 
+                        <th>
+                            <h2 id="texto-curriculo"  style="color: #B0B0B0;" class="texto">
+                            <a  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="myFunction('aba-curriculo', 'texto-curriculo')">Currículo</a></h2></th>
                     </tr>
-                    <tr id="aba-curriculo2"> 
-                        <th><a href="curriculo.html" target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick=" /*Professor, lembre que a gente dscutiu sobre esse assunto em sala e o senhor deixou eu usar.*/
-                            document.getElementById('aba-curriculo').style.backgroundColor='#FFD700'; /*Deixa o botão do currículo claro quando ele é clicado */
-                            document.getElementById('aba-hobbies').style.backgroundColor='#2d0000'; /*Deixa o botão de hobbies escuro quando o botão do currículo é clicado */
-                            document.getElementById('texto-curriculo').style.color='#000000'; /*Deixa o texto do botão do currículo preto quando ele é clicado */
-                            document.getElementById('texto-hobbies').style.color='#B0B0B0'; /*Deixa o texto do botão de hobbies mais claro quando o botão de curriculo é apertado */
-                            ">
-                            <h2 id="texto-curriculo2" style="color: #B0B0B0;">Currículo2</h2></a> </th>
+                    <tr id="aba-curriculo2" class="botoes"> 
+                        <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                            onclick="myFunction('aba-curriculo2', 'texto-curriculo2')">
+                            <a id="texto-curriculo2" style="color: #B0B0B0;" class="texto">Currículo2</a></h2> </th>
                     </tr>
-                    <tr id="aba-hobbies">
-                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
-                            onclick="
-                            document.getElementById('aba-hobbies').style.backgroundColor='#FFD700'; /*Deixa o botão de hobbies claro quando ele é clicado */
-                            document.getElementById('aba-curriculo').style.backgroundColor='#2d0000'; /*Deixa o botão do currículo escuro quando o botão de hobbies é clicado */
-                            document.getElementById('texto-hobbies').style.color='#000000'; /*Deixa o texto do botão de hobbies preto quando ele é clicado */
-                            document.getElementById('texto-curriculo').style.color='#B0B0B0'; /*Deixa o texto do botão do currículo mais claro quando o botão de hobbies é apertado */
-                            ">
-                            <h2 id="texto-hobbies" style="color: #B0B0B0;">Hobbies</h2></a></th>
+                    <tr id="aba-hobbies" class="botoes">
+                        <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="myFunction('aba-hobbies', 'texto-hobbies')">
+                            <a id="texto-hobbies" style="color: #B0B0B0;" class="texto">Hobbies</a></h2></th>
                     </tr>
                     
-                    <tr id="aba-musicas">
-                        <th><a href="hobbies.html" target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
-                            onclick="
-                            document.getElementById('aba-hobbies').style.backgroundColor='#FFD700'; /*Deixa o botão de hobbies claro quando ele é clicado */
-                            document.getElementById('aba-curriculo').style.backgroundColor='#2d0000'; /*Deixa o botão do currículo escuro quando o botão de hobbies é clicado */
-                            document.getElementById('texto-hobbies').style.color='#000000'; /*Deixa o texto do botão de hobbies preto quando ele é clicado */
-                            document.getElementById('texto-curriculo').style.color='#B0B0B0'; /*Deixa o texto do botão do currículo mais claro quando o botão de hobbies é apertado */
-                            ">
-                            <h2 id="texto-musicas" style="color: #B0B0B0;">Hobbies</h2></a></th>
+                    <tr id="aba-musicas" class="botoes">
+                        <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                            onclick="myFunction('aba-musicas', 'texto-musicas')">
+                            <a id="texto-musicas" style="color: #B0B0B0;" class="texto">Musicas</a></h2></th>
                     </tr>
                 </table>
     </div>
