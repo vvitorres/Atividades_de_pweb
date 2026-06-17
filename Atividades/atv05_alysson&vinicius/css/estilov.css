@@ -1,0 +1,53 @@
+        #corpo {
+            background-image: url(../img/fundo_geral2.png);
+        }
+        .meu_container { /*classe*/
+            background-color: rgb(245, 245, 236); /*Muda o plano de fundo do div do corpo*/
+        }
+
+        #cabecalho { /*id*/
+            color: #FFD700; /*Muda a cor do texto do cabeçalho*/
+            background-color: #1a1a1a; /*Muda a cor do plano de fundo do cabeçalho*/
+            
+        }
+        .barra_lateral { /*classe*/
+            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
+            height: 814px;  /*Ajeita a altura total da barra lateral*/
+        }
+        .barra_lateral div { /*classe*/
+            vertical-align: top; /*Alinha o conteúdo do div ao topo*/
+        }
+        #capa { /*id*/
+            background-color:#FFD700; /*Muda a cor do plano de fundo do botão currículo*/
+        }
+        #texto-capa { /*id*/
+            color: black; /*Muda a cor do texto do botão currículo*/
+
+        }
+        .texto_hobbies { /*Classe*/
+            background-color: #536678b3; /*Muda a cor de fundo do texto. */
+            font-size: 150%; /*Aumenta o tamanho da fonte.*/
+            font-weight: bold; /*Deixa o texto em negrito. */
+        }
+        #texto-hobbies { /*id*/
+            color: #B0B0B0; /*Muda a cor do texto do botão hobbies*/
+        }
+        #texto-curriculo {
+            color: #B0B0B0; /*Muda a cor do texto do botão currículo*/
+        }
+        #texto-curriculo2 {
+            color: #B0B0B0; /*Muda a cor do texto do botão currículo2*/
+        }
+        #texto-musicas {
+            color: #B0B0B0; /*Muda a cor do texto do botão musicas*/
+        }
+        #conteudo { /*id*/
+            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
+        }
+        #rodape { /*id*/
+            background-color: #1a1a1a; /*Muda a cor do plano de fundo do rodapé*/
+            color: #E0E0E0; /*Muda a cor da fonte do rodapé*/
+        }
+        #conteudo_curriculo {
+           background-image: url(../img/fundo_curriculo.png);  
+        }

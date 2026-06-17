@@ -5,97 +5,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Site sobre mim</title>
+
     <link rel="icon" type="image/x-icon" href="img/icom.ico">
-
-    <style id="estrutura">
-        #corpo {
-            background-size: 100%;
-            background-attachment: fixed;
+    <link rel="stylesheet" href="css/estrutura.css">
+    <link rel="stylesheet" href="css/estilov.css" id="estilov">
+    <link rel="stylesheet" href="css/estiloa.css" media="none" id="estiloa">
+    
+    <script>
+        function temas(ativo) {
+            const temav = document.getElementById("estilov");
+            const temaa = document.getElementById("estiloa");
+            if (ativo == 1) {
+                temav.disabled = true;
+                temaa.disabled = false;
+            } else {
+                temav.disabled = false;
+                temaa.disabled = true;
+            }
         }
-        .meu_container { /*classe*/
-            width: 65%; /*Ajeita a largura total do div do corpo*/
-            height: 950px; /*Ajeita a altura total do div do corpo*/
-            margin-top: 30px; /*colocar uma margem no topo*/
-            margin: auto; /*Deixa a margem uniforme (tudo centralizado)*/
-        }
-        .meu_container div{ /*classe*/
-            text-align: center; /*Alinha todo o texto no centro*/
-            overflow: hidden; /* Corta qualquer conteúdo que passe do tamanho da div */
-        }
-        #cabecalho { /*id*/
-            height: 80px; /*Ajeita a altura total do cabeçalho*/
-            font-size: 300%; /*Aumenta o tamanho da fonte*/
-        }
-        .grade { /*classe*/
-            display: grid; /*Organiza os elementos em uma grade*/
-            grid-template-columns: 15% 85%; /*Cria uma coluna com 15% do espaço e outra com 85%*/
-        }
-        #conteudo { /*id*/
-            margin: 0; /*Deixa a margem uniforme (tudo centralizado)*/
-            width: 100%; /*Deixa a largura do conteúdo em 100%*/
-            border: none; /*Deixa sem borda*/
-        }
-        #rodape { /*id*/
-            height: 70px; /*Ajeita a altura total do rodapé*/
-        }
-    </style>
-
-    <style id="tema_a"> <!--Sua parte Alysson-->
-
-    </style>
-
-    <style id="tema_v">
-        #corpo {
-            background-image: url(img/fundo_geral2.png);
-        }
-        .meu_container { /*classe*/
-            background-color: rgb(245, 245, 236); /*Muda o plano de fundo do div do corpo*/
-        }
-
-        #cabecalho { /*id*/
-            color: #FFD700; /*Muda a cor do texto do cabeçalho*/
-            background-color: #1a1a1a; /*Muda a cor do plano de fundo do cabeçalho*/
-            
-        }
-        .barra_lateral { /*classe*/
-            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
-            height: 814px;  /*Ajeita a altura total da barra lateral*/
-        }
-        .barra_lateral div { /*classe*/
-            vertical-align: top; /*Alinha o conteúdo do div ao topo*/
-        }
-        #capa { /*id*/
-            background-color:#FFD700; /*Muda a cor do plano de fundo do botão currículo*/
-        }
-        #texto-capa { /*id*/
-            color: black; /*Muda a cor do texto do botão currículo*/
-
-        }
-        #texto-hobbies { /*id*/
-            color: #B0B0B0; /*Muda a cor do texto do botão hobbies*/
-        }
-        #conteudo { /*id*/
-            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
-        }
-        #rodape { /*id*/
-            background-color: #1a1a1a; /*Muda a cor do plano de fundo do rodapé*/
-            color: #E0E0E0; /*Muda a cor da fonte do rodapé*/
-        }
-    </style>
-
-<script>
-    function myFunction(ativo, ativo2) {
-    var y = document.getElementsByClassName("texto");
-    var x = document.getElementsByClassName("botoes");
-    for (var i = 0; i < x.length; i++) {
+        function myFunction(ativo, ativo2) {
         
-        x[i].style.backgroundColor = "#2d0000";
-        y[i].style.color = "#B0B0B0";
+        var y = document.getElementsByClassName("texto");
+        var x = document.getElementsByClassName("botoes");
+        for (var i = 0; i < x.length; i++) {
+            
+            x[i].style.backgroundColor = "#2d0000";
+            y[i].style.color = "#B0B0B0";
+        }
+        document.getElementById(ativo).style.backgroundColor='#FFD700';
+        document.getElementById(ativo2).style.color='black';
     }
-    document.getElementById(ativo).style.backgroundColor='#FFD700';
-    document.getElementById(ativo2).style.color='black';
-}
-</script>
+    </script>
 
 </head>
 <body id="corpo">
@@ -104,13 +44,13 @@
     <div class="grade">
     <div class="barra_lateral">
         <table style="width: 100%;">
-                    <tr id="capa" class="botoes" style="background-color:#FFD700;"> 
+                    <tr id="capa" class="botoes"> 
                         <th><h2 target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick="myFunction('capa', 'texto-capa')"><a id="texto-capa" style="color: black;" class="texto" >Capa</a></h2></th>
+                            onclick="myFunction('capa', 'texto-capa')"><a id="texto-capa"  class="texto" >Capa</a></h2></th>
                     </tr>
                     <tr id="aba-curriculo" class="botoes"> 
                         <th>
-                            <h2 id="texto-curriculo"  style="color: #B0B0B0;" class="texto">
+                        <h2 id="texto-curriculo"  style="color: #B0B0B0;" class="texto">
                             <a  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
                             onclick="myFunction('aba-curriculo', 'texto-curriculo')">Currículo</a></h2></th>
                     </tr>

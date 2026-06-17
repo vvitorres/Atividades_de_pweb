@@ -1,0 +1,38 @@
+        #corpo {
+            background-size: 100%;
+            background-attachment: fixed;
+        }
+        .meu_container { /*classe*/
+            width: 65%; /*Ajeita a largura total do div do corpo*/
+            height: 950px; /*Ajeita a altura total do div do corpo*/
+            margin-top: 30px; /*colocar uma margem no topo*/
+            margin: auto; /*Deixa a margem uniforme (tudo centralizado)*/
+        }
+        .meu_container div{ /*classe*/
+            text-align: center; /*Alinha todo o texto no centro*/
+            overflow: hidden; /* Corta qualquer conteúdo que passe do tamanho da div */
+        }
+        #cabecalho { /*id*/
+            height: 80px; /*Ajeita a altura total do cabeçalho*/
+            font-size: 300%; /*Aumenta o tamanho da fonte*/
+        }
+        .botoes {
+        cursor: pointer;
+        }
+        .grade { /*classe*/
+            display: grid; /*Organiza os elementos em uma grade*/
+            grid-template-columns: 15% 85%; /*Cria uma coluna com 15% do espaço e outra com 85%*/
+        }
+        #conteudo { /*id*/
+            margin: 0; /*Deixa a margem uniforme (tudo centralizado)*/
+            width: 100%; /*Deixa a largura do conteúdo em 100%*/
+            border: none; /*Deixa sem borda*/
+        }
+        #rodape { /*id*/
+            height: 70px; /*Ajeita a altura total do rodapé*/
+        }
+        #conteudo_curriculo {
+            width: 100%; 
+            background-size: 60%; 
+            background-attachment: fixed;
+        }
