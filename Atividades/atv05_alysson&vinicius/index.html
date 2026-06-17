@@ -58,6 +58,10 @@
         document.getElementById(ativo).style.backgroundColor='#FFD700';
         document.getElementById(ativo2).style.color='black';
     }
+
+    function mostrarBotoes() {
+        document.getElementById('botoes-curriculo').hidden = !document.getElementById('botoes-curriculo').hidden;
+    }
     </script>
 
 
@@ -82,36 +86,43 @@
                                 carregarConteudo('arquivos_html/capa.html')
                                 "><a id="texto-capa"  class="texto" >Capa</a></h2></th>
                     </tr>
-                    <tr id="aba-curriculo" class="botoes"> 
-                        <th>
-                        <h2 id="texto-curriculo"  style="color: #B0B0B0;" class="texto">
-                            <a  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick="myFunction('aba-curriculo', 'texto-curriculo')
-                            carregarConteudo('arquivos_html/curriculo_vinicius.html')
-                            ">Currículo</a></h2></th>
-                    </tr>
-                    <tr id="aba-curriculo2" class="botoes"> 
-                        <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
-                            onclick="myFunction('aba-curriculo2', 'texto-curriculo2')
-                            carregarConteudo('arquivos_html/curriculo_alysson.html')
-                            ">
-                            <a id="texto-curriculo2" style="color: #B0B0B0;" class="texto">Currículo2</a></h2> </th>
-                    </tr>
-                    <tr id="aba-hobbies" class="botoes">
-                        <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
-                            onclick="myFunction('aba-hobbies', 'texto-hobbies')
-                            carregarConteudo('arquivos_html/tema_vinicius.html')
-                            ">
-                            <a id="texto-hobbies" style="color: #B0B0B0;" class="texto">Hobbies</a></h2></th>
-                    </tr>
                     
-                    <tr id="aba-musicas" class="botoes">
-                        <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
-                            onclick="myFunction('aba-musicas', 'texto-musicas')
-                            carregarConteudo('arquivos_html/tema_alysson.html')
-                            ">
-                            <a id="texto-musicas" style="color: #B0B0B0;" class="texto">Musicas</a></h2></th>
-                    </tr>
+                    <button onclick="mostrarBotoes()">teste</button>
+                    <div id="botoes-curriculo">
+                        <tr id="aba-curriculo" class="botoes"> 
+                            <th>
+                            <h2 id="texto-curriculo"  style="color: #B0B0B0;" class="texto">
+                                <a  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                                onclick="myFunction('aba-curriculo', 'texto-curriculo')
+                                carregarConteudo('arquivos_html/curriculo_vinicius.html')
+                                ">Currículo</a></h2></th>
+                        </tr>
+                        <tr id="aba-curriculo2" class="botoes"> 
+                            <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba do currículo"
+                                onclick="myFunction('aba-curriculo2', 'texto-curriculo2')
+                                carregarConteudo('arquivos_html/curriculo_alysson.html')
+                                ">
+                                <a id="texto-curriculo2" style="color: #B0B0B0;" class="texto">Currículo2</a></h2> </th>
+                        </tr>
+                    </div>
+                    
+                    <div id="botoes-tema">
+                        <tr id="aba-hobbies" class="botoes">
+                            <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                                onclick="myFunction('aba-hobbies', 'texto-hobbies')
+                                carregarConteudo('arquivos_html/tema_vinicius.html')
+                                ">
+                                <a id="texto-hobbies" style="color: #B0B0B0;" class="texto">Hobbies</a></h2></th>
+                        </tr>
+                        
+                        <tr id="aba-musicas" class="botoes">
+                            <th><h2  target="pagina_principal" style="text-decoration: none;" title="Aba dos hobbies"
+                                onclick="myFunction('aba-musicas', 'texto-musicas')
+                                carregarConteudo('arquivos_html/tema_alysson.html')
+                                ">
+                                <a id="texto-musicas" style="color: #B0B0B0;" class="texto">Musicas</a></h2></th>
+                        </tr>
+                    </div>
         </table>
     </div>
 
