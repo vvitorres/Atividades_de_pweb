@@ -6,79 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Currículo</title>
     <link rel="icon" type="image/x-icon" href="img2/favicon.ico">
-
-    <style>
-        table, td, th {
-            /* define uma borda padrão preta; centraliza as tabelas
-            automaticamente e define o padrão da cor de fundo para branco*/
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin: auto;
-            background-color: white;
-        }
-
-        td, th {
-            /* centraliza os textos dentro de uma célula qualquer horizontal e verticalmente */
-            text-align: center;
-            vertical-align: middle;
-        }
-
-        th {
-            /* define para cinza o background de células-título */
-            background-color: gray;
-        }
-
-        .titulos {
-            /* alinha todos os títulos */
-            text-align: center;
-        }
-
-        .containeres {
-            /* cria containeres que serão responsáveis pelo layout do currículo */
-            width: 100%;
-            display: flex;
-        }
-
-        .curriculoEsquerda {
-            /* define formatação pra coluna esquerda do currículo */
-            width: 20%;
-        }
-
-        .curriculoDireita {
-            /* define formatação pra coluna direita do currículo */
-            width: 80%;
-            padding-left: 25px;
-        }
-
-        #imagemPerfil {
-            /* define margens automáticas pra imagem de perfil */
-            margin: auto;
-        }
-
-        #abaixoDaImagem {
-            /* define margem esquerda para texto abaixo da foto de perfil */
-            padding-left: 2px;
-        }
-
-        .certificados {
-            /* organiza certificados */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 25px;
-            flex-wrap: wrap;
-            margin-top: 15px;
-        }
-
-        .certificados img {
-            /* define tamanho padrão para as imagens */
-            width: 250px;
-        }
-    </style>
+    <link rel="stylesheet" href="css/estrutura.css">
+    <link rel="stylesheet" href="css/estilov.css" id="estilov">
+    <link rel="stylesheet" href="css/estiloa.css" media="none" id="estiloa">
+    
 </head>
 
-<body>
-
+<table class="conteudo_zbranco">
+    <tr>
+        <td>
     <div class="containeres">
         <div class="curriculoEsquerda" id="imagemPerfil">
             <img src="img2/curriculo/placeholder.png" alt="Placeholder" width="100%">
@@ -118,81 +54,81 @@
         </div>
         <div class="curriculoDireita">
             <h3 class="titulos">Perfil Profissional</h3>
-            <table style="width: 100%;">
+            <table class="tabela_toda" style="width: 100%;">
                 <tr>
-                    <th colspan="4">Participação em Olimpíadas Científicas</th>
+                    <th class="tabela_titulo tabela_toda cont_tabela" colspan="4">Participação em Olimpíadas Científicas</th>
                 </tr>
                 <tr>
-                    <th>Olimpíada</th>
-                    <th>Área</th>
-                    <th>Ano</th>
-                    <th>Desempenho</th>
+                    <th class="tabela_titulo tabela_toda cont_tabela">Olimpíada</th>
+                    <th class="tabela_titulo tabela_toda cont_tabela">Área</th>
+                    <th class="tabela_titulo tabela_toda cont_tabela">Ano</th>
+                    <th class="tabela_titulo tabela_toda cont_tabela">Desempenho</th>
                 </tr>
                 <tr>
-                    <td>OBMEP</td>
-                    <td>Matemática</td>
-                    <td>2024</td>
-                    <td>Bronze</td>
+                    <td class="tabela_toda cont_tabela">OBMEP</td>
+                    <td class="tabela_toda cont_tabela">Matemática</td>
+                    <td class="tabela_toda cont_tabela">2024</td>
+                    <td class="tabela_toda cont_tabela">Bronze</td>
                 </tr>
                 <tr>
-                    <td>OBI</td>
-                    <td>Informática</td>
-                    <td>2024</td>
-                    <td>Participação</td>
+                    <td class="tabela_toda cont_tabela">OBI</td>
+                    <td class="tabela_toda cont_tabela">Informática</td>
+                    <td class="tabela_toda cont_tabela">2024</td>
+                    <td class="tabela_toda cont_tabela">Participação</td>
                 </tr>
                 <tr>
-                    <td>OIM</td>
-                    <td>Matemática</td>
-                    <td>2024</td>
-                    <td>Participação</td>
+                    <td class="tabela_toda cont_tabela">OIM</td>
+                    <td class="tabela_toda cont_tabela">Matemática</td>
+                    <td class="tabela_toda cont_tabela">2024</td>
+                    <td class="tabela_toda cont_tabela">Participação</td>
                 </tr>
                 <tr>
-                    <td>Canguru</td>
-                    <td>Matemática</td>
-                    <td>2024</td>
-                    <td>Participação</td>
+                    <td class="tabela_toda cont_tabela">Canguru</td>
+                    <td class="tabela_toda cont_tabela">Matemática</td>
+                    <td class="tabela_toda cont_tabela">2024</td>
+                    <td class="tabela_toda cont_tabela">Participação</td>
                 </tr>
                 <tr>
-                    <td>OBMEP</td>
-                    <td>Matemática</td>
-                    <td>2025</td>
-                    <td>Bronze</td>
+                    <td class="tabela_toda cont_tabela">OBMEP</td>
+                    <td class="tabela_toda cont_tabela">Matemática</td>
+                    <td class="tabela_toda cont_tabela">2025</td>
+                    <td class="tabela_toda cont_tabela">Bronze</td>
                 </tr>
                 <tr>
-                    <td>OBI</td>
-                    <td>Informática</td>
-                    <td>2025</td>
-                    <td>Participação</td>
+                    <td class="tabela_toda cont_tabela">OBI</td>
+                    <td class="tabela_toda cont_tabela">Informática</td>
+                    <td class="tabela_toda cont_tabela">2025</td>
+                    <td class="tabela_toda cont_tabela">Participação</td>
                 </tr>
                 <tr>
-                    <td>OBA</td>
-                    <td>Astronomia</td>
-                    <td>2025</td>
-                    <td>Participação</td>
+                    <td class="tabela_toda cont_tabela">OBA</td>
+                    <td class="tabela_toda cont_tabela">Astronomia</td>
+                    <td class="tabela_toda cont_tabela">2025</td>
+                    <td class="tabela_toda cont_tabela">Participação</td>
                 </tr>
                 <tr>
-                    <td>Canguru</td>
-                    <td>Matemática</td>
-                    <td>2025</td>
-                    <td>Ouro</td>
+                    <td class="tabela_toda cont_tabela">Canguru</td>
+                    <td class="tabela_toda cont_tabela">Matemática</td>
+                    <td class="tabela_toda cont_tabela">2025</td>
+                    <td class="tabela_toda cont_tabela">Ouro</td>
                 </tr>
                 <tr>
-                    <td>ONHB</td>
-                    <td>História</td>
-                    <td>2025</td>
-                    <td>Participação</td>
+                    <td class="tabela_toda cont_tabela">ONHB</td>
+                    <td class="tabela_toda cont_tabela">História</td>
+                    <td class="tabela_toda cont_tabela">2025</td>
+                    <td class="tabela_toda cont_tabela">Participação</td>
                 </tr>
                 <tr>
-                    <td>OLITEF</td>
-                    <td>Educação Financeira</td>
-                    <td>2025</td>
-                    <td>Prata</td>
+                    <td class="tabela_toda cont_tabela">OLITEF</td>
+                    <td class="tabela_toda cont_tabela">Educação Financeira</td>
+                    <td class="tabela_toda cont_tabela">2025</td>
+                    <td class="tabela_toda cont_tabela">Prata</td>
                 </tr>
                 <tr>
-                    <td>ONIA</td>
-                    <td>Inteligência Artificial</td>
-                    <td>2025/2026</td>
-                    <td>Em curso</td>
+                    <td class="tabela_toda cont_tabela">ONIA</td>
+                    <td class="tabela_toda cont_tabela">Inteligência Artificial</td>
+                    <td class="tabela_toda cont_tabela">2025/2026</td>
+                    <td class="tabela_toda cont_tabela">Em curso</td>
                 </tr>
             </table>
         
@@ -205,6 +141,8 @@
             </div>
         </div>
     </div>
-</body>
+    </td>
+    </tr>
+</table>
 
 </html>

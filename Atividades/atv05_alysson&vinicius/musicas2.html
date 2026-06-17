@@ -5,55 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Músicas</title>
     <link rel="icon" type="image/x-icon" href="img2/favicon.ico">
+    <link rel="stylesheet" href="css/estrutura.css">
+    <link rel="stylesheet" href="css/estilov.css" id="estilov">
+    <link rel="stylesheet" href="css/estiloa.css" media="none" id="estiloa">
 
-    <style>
-        table {
-            /* deixa que a tabela de música tenha largura máxima */
-            width: 100%;
-        }
-        table, td, th {
-            /* define uma borda padrão preta; centraliza as tabelas automaticament;
-            define o padrão da cor de fundo para branco e centraliza vertical e
-            horizontalmente o conteúdo das células*/
-            border: 1px solid black;
-            border-collapse: collapse;
-            margin: auto;
-            text-align: center;
-            vertical-align: middle;
-            background-color: white;
-        }
-        td, th {
-            /* centraliza os textos dentro de uma célula qualquer horizontal e verticalmente */
-            text-align: center;
-            vertical-align: middle;
-        }
-        th {
-            /* define para cinza o background de células-título */
-            background-color: grey;
-        }
 
-        .fotos {
-            /* define a foto de perfil dos artistas para um tamanho uniforme */
-            width: 200px;
-        }
-        .thumbs {
-            /* define a capa das músicas para um tamanho uniforme */
-            width: 100px;
-        }
-        .containeres {
-            /* cria um sistema que organiza dois artistas por linha */
-            width: 100%;
-            display: flex;
-            text-align: center;
-        }
-        .elementos {
-            /* auxilia a classe anterior na organização */
-            width: 50%;
-        }
-    </style>
 </head>
 
-<body>
+<table class="conteudo_zbranco">
+    <tr>
+        <td>
     <h1 style="text-align: center;">Meu gosto musical</h1>
     <p style="text-align: center;"><i>(O melhor possível)</i></p>
 
@@ -95,83 +56,85 @@
         </div>
     </div>
 
-    <table>
+    <table class="tabela_toda tabela_musica">
         <tr>
-            <th colspan="6">Músicas recomendadas</th>
+            <th class="cont_tabela tabela_titulo tabela_toda" colspan="6">Músicas recomendadas</th>
         </tr>
         <tr>
-            <th>Capa</th>
-            <th>Nome</th>
-            <th>Artista</th>
-            <th>Ano</th>
-            <th>Álbum</th>
-            <th>Gênero</th>
+            <th class="cont_tabela tabela_titulo tabela_toda">Capa</th>
+            <th class="cont_tabela tabela_titulo tabela_toda">Nome</th>
+            <th class="cont_tabela tabela_titulo tabela_toda">Artista</th>
+            <th class="cont_tabela tabela_titulo tabela_toda">Ano</th>
+            <th class="cont_tabela tabela_titulo tabela_toda">Álbum</th>
+            <th class="cont_tabela tabela_titulo tabela_toda">Gênero</th>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/Ioh0bqty8LY?si=V6v2GGsHAhhmxwyN" target="_blank"><img src="img2/musicas/thumbs/ray_tracer.jpeg" class="thumbs" alt="Ray Tracer por TheFatRat"></a></td>
-            <td>Ray Tracer</td>
-            <td>TheFatRat</td>
-            <td>2024</td>
-            <td>The Story</td>
-            <td>Glitch Hop</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/Ioh0bqty8LY?si=V6v2GGsHAhhmxwyN" target="_blank"><img src="img2/musicas/thumbs/ray_tracer.jpeg" class="thumbs" alt="Ray Tracer por TheFatRat"></a></td>
+            <td class="tabela_toda cont_tabela">Ray Tracer</td>
+            <td class="tabela_toda cont_tabela">TheFatRat</td>
+            <td class="tabela_toda cont_tabela">2024</td>
+            <td class="tabela_toda cont_tabela">The Story</td>
+            <td class="tabela_toda cont_tabela">Glitch Hop</td>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/CM4CkVFmTds?si=iU5gFN6ulOhQTNNx" target="_blank"><img src="img2/musicas/thumbs/i_cant_stop_me.jpeg" class="thumbs" alt="I Can't Stop Me por TWICE"></a></td>
-            <td>I CAN'T STOP ME</td>
-            <td>TWICE</td>
-            <td>2020</td>
-            <td>EYES WIDE OPEN</td>
-            <td>K-Pop, Synthwave</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/CM4CkVFmTds?si=iU5gFN6ulOhQTNNx" target="_blank"><img src="img2/musicas/thumbs/i_cant_stop_me.jpeg" class="thumbs" alt="I Can't Stop Me por TWICE"></a></td>
+            <td class="tabela_toda cont_tabela">I CAN'T STOP ME</td>
+            <td class="tabela_toda cont_tabela">TWICE</td>
+            <td class="tabela_toda cont_tabela">2020</td>
+            <td class="tabela_toda cont_tabela">EYES WIDE OPEN</td>
+            <td class="tabela_toda cont_tabela">K-Pop, Synthwave</td>
         </tr>
 
         <tr>
-            <td><a href="https://youtu.be/KMythzAnNK0?si=uN8tHsWHCCXJB0Ji" target="_blank"><img src="img2/musicas/thumbs/invincible.jpeg" class="thumbs" alt="Invincible, por tripleS EVOLution"></a></td>
-            <td>Invincible</td>
-            <td>tripleS EVOLution</td>
-            <td>2023</td>
-            <td>&lt;MUJUK&gt;</td>
-            <td>K-Pop, Liquid DnB</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/KMythzAnNK0?si=uN8tHsWHCCXJB0Ji" target="_blank"><img src="img2/musicas/thumbs/invincible.jpeg" class="thumbs" alt="Invincible, por tripleS EVOLution"></a></td>
+            <td class="tabela_toda cont_tabela">Invincible</td>
+            <td class="tabela_toda cont_tabela">tripleS EVOLution</td>
+            <td class="tabela_toda cont_tabela">2023</td>
+            <td class="tabela_toda cont_tabela">&lt;MUJUK&gt;</td>
+            <td class="tabela_toda cont_tabela">K-Pop, Liquid DnB</td>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/wR-nn5t2ce8?si=s1EDflj72qV8F8-W" target="_blank"><img src="img2/musicas/thumbs/the_dawn.jpeg" class="thumbs" alt="Camden, por Laura Brehm"></a></td>
-            <td>Camden</td>
-            <td>Laura Brehm</td>
-            <td>2021</td>
-            <td>The Dawn is<br>Still Dark</td>
-            <td>Chill</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/wR-nn5t2ce8?si=s1EDflj72qV8F8-W" target="_blank"><img src="img2/musicas/thumbs/the_dawn.jpeg" class="thumbs" alt="Camden, por Laura Brehm"></a></td>
+            <td class="tabela_toda cont_tabela">Camden</td>
+            <td class="tabela_toda cont_tabela">Laura Brehm</td>
+            <td class="tabela_toda cont_tabela">2021</td>
+            <td class="tabela_toda cont_tabela">The Dawn is<br>Still Dark</td>
+            <td class="tabela_toda cont_tabela">Chill</td>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/1Lmy7qwmSMc?si=86yFhMKxxzNVmRD6" target="_blank"><img src="img2/musicas/thumbs/blackhole.avif" class="thumbs" alt="BLACKHOLE por IVE"></a></td>
-            <td>BLACKHOLE</td>
-            <td>IVE</td>
-            <td>2026</td>
-            <td>REVIVE+</td>
-            <td>K-Pop, Dance, <br>Synthpop</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/1Lmy7qwmSMc?si=86yFhMKxxzNVmRD6" target="_blank"><img src="img2/musicas/thumbs/blackhole.avif" class="thumbs" alt="BLACKHOLE por IVE"></a></td>
+            <td class="tabela_toda cont_tabela">BLACKHOLE</td>
+            <td class="tabela_toda cont_tabela">IVE</td>
+            <td class="tabela_toda cont_tabela">2026</td>
+            <td class="tabela_toda cont_tabela">REVIVE+</td>
+            <td class="tabela_toda cont_tabela">K-Pop, Dance, <br>Synthpop</td>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/Vk5-c_v4gMU?si=BEYvFkZw5QJ_Yk_B" target="_blank"><img src="img2/musicas/thumbs/magnetic.jpeg" class="thumbs" alt="Magnetic por ILLIT"></a></td>
-            <td>Magnetic</td>
-            <td>ILLIT</td>
-            <td>2024</td>
-            <td>Super Real <br>Me</td>
-            <td>K-Pop, Hyperpop</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/Vk5-c_v4gMU?si=BEYvFkZw5QJ_Yk_B" target="_blank"><img src="img2/musicas/thumbs/magnetic.jpeg" class="thumbs" alt="Magnetic por ILLIT"></a></td>
+            <td class="tabela_toda cont_tabela">Magnetic</td>
+            <td class="tabela_toda cont_tabela">ILLIT</td>
+            <td class="tabela_toda cont_tabela">2024</td>
+            <td class="tabela_toda cont_tabela">Super Real <br>Me</td>
+            <td class="tabela_toda cont_tabela">K-Pop, Hyperpop</td>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/6ZDxop2yFao?si=CXOIS6mtc9HQY7NG" target="_blank"><img src="img2/musicas/thumbs/still_here_with_you.jpeg" class="thumbs" alt="Still Here With You"></a></td>
-            <td>Still Here <br>With You</td>
-            <td>TheFatRat</td>
-            <td>2024</td>
-            <td>The Story</td>
-            <td>Liquid DnB</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/6ZDxop2yFao?si=CXOIS6mtc9HQY7NG" target="_blank"><img src="img2/musicas/thumbs/still_here_with_you.jpeg" class="thumbs" alt="Still Here With You"></a></td>
+            <td class="tabela_toda cont_tabela">Still Here <br>With You</td>
+            <td class="tabela_toda cont_tabela">TheFatRat</td>
+            <td class="tabela_toda cont_tabela">2024</td>
+            <td class="tabela_toda cont_tabela">The Story</td>
+            <td class="tabela_toda cont_tabela">Liquid DnB</td>
         </tr>
         <tr>
-            <td><a href="https://youtu.be/3ESat1K9Sdc?si=njBDw7JPJZOejOgp" target="_blank"><img src="img2/musicas/thumbs/out_of_love.jpeg" class="thumbs" alt="Out of Love por TheFatRat"></a></td>
-            <td>Out of Love</td>
-            <td>TheFatRat</td>
-            <td>2025</td>
-            <td>The Story</td>
-            <td>Phonk</td>
+            <td class="tabela_toda cont_tabela"><a href="https://youtu.be/3ESat1K9Sdc?si=njBDw7JPJZOejOgp" target="_blank"><img src="img2/musicas/thumbs/out_of_love.jpeg" class="thumbs" alt="Out of Love por TheFatRat"></a></td>
+            <td class="tabela_toda cont_tabela">Out of Love</td>
+            <td class="tabela_toda cont_tabela">TheFatRat</td>
+            <td class="tabela_toda cont_tabela">2025</td>
+            <td class="tabela_toda cont_tabela">The Story</td>
+            <td class="tabela_toda cont_tabela">Phonk</td>
         </tr>
     </table>
-</body>
+    </td>
+    </tr>
+</table>
 </html>
