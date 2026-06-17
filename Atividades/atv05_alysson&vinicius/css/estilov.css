@@ -1,5 +1,5 @@
         #corpo {
-            background-image: url(../img/fundo_geral2.png);
+            background-image: url(../img/img_vinicius/fundo_geral2.png);
         }
         .meu_container { /*classe*/
             background-color: rgb(245, 245, 236); /*Muda o plano de fundo do div do corpo*/
@@ -48,8 +48,8 @@
             color: #E0E0E0; /*Muda a cor da fonte do rodapé*/
         }
         .conteudo_zbranco {
-           background-image: url(../img/fundo_curriculo.png);  
+           background-image: url(../img/img_vinicius/fundo_curriculo.png);  
         }
         .conteudo_zazul {
-            background-image: url(../img/fundo_robbies.png);
+            background-image: url(../img/img_vinicius/fundo_robbies.png);
         }
