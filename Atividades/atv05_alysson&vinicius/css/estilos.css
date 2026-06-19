@@ -2,7 +2,7 @@
    TEMA V
    ========================= */
 
-   #corpo.temav {
+#corpo.temav {
     background-image: url(../img/img_vinicius/fundo_geral2.png);
 }
 
@@ -82,10 +82,6 @@
 #texto-curriculo2,
 #texto-musicas {
     color: #B0B0B0;
-}
-
-#conteudo {
-    background-color: #2d0000;
 }
 
 .conteudo_zbranco {
