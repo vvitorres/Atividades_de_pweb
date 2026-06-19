@@ -12,7 +12,7 @@
     
     <script>
 
-        // Função que carrega o conteúdo de um arquivo HTML para dentro da div principal
+    // Função que carrega o conteúdo de um arquivo HTML para dentro da div principal
     async function carregarConteudo(pagina) {
     const container = document.getElementById('conteudo');
     
@@ -32,7 +32,7 @@
     } catch (erro) {
         container.innerHTML = "<h1>Erro 404</h1><p>Conteúdo não encontrado.</p>";
     }
-    }
+}
 
     function temas() {
     const body = document.getElementById("corpo");
@@ -40,10 +40,11 @@
     body.classList.toggle("temaa");
     body.classList.toggle("temav");
 
-    if (document.getElementById('botao-tema').textContent == "Tema A") document.getElementById('botoes-tema').textContent = "Tema V";
+    if (document.getElementById('botao-tema').textContent == "Tema A") document.getElementById('botao-tema').textContent = "Tema V";
     else document.getElementById('botao-tema').textContent = "Tema A";
 }
-        function myFunction(ativo, ativo2) {
+
+    function myFunction(ativo, ativo2) {
         
         var y = document.getElementsByClassName("texto");
         var x = document.getElementsByClassName("botoes");
