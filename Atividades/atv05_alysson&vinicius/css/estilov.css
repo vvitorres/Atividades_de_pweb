@@ -52,9 +52,6 @@
             background-color: #1a1a1a; /*Muda a cor do plano de fundo do rodapé*/
             color: #E0E0E0; /*Muda a cor da fonte do rodapé*/
         }
-        .conteudo_zbranco {
+        .imagem_zbranco {
            background-image: url(../img/img_vinicius/fundo_curriculo.png);  
-        }
-        .conteudo_zazul {
-            background-image: url(../img/img_vinicius/fundo_robbies.png);
         }
