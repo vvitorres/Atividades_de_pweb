@@ -39,6 +39,7 @@
         #rodape { /*id*/
             height: 90px; /*Ajeita a altura total do rodapé*/
         }
+        
         .conteudo_zbranco {
             width: 100%; 
             background-size: 60%; 
