@@ -37,7 +37,7 @@
             background: #ffffff; /* Fundo branco para contraste */
         }
         #rodape { /*id*/
-            height: 70px; /*Ajeita a altura total do rodapé*/
+            height: 90px; /*Ajeita a altura total do rodapé*/
         }
         .conteudo_zbranco {
             width: 100%; 
@@ -134,3 +134,19 @@
         .tabela_musica {
             width: 100%;
         }
+
+#botao-tema {
+    background-color: #FFD700;
+    color: #2d0000;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.2s;
+    margin-top: 20px;
+}
+
+#botao-tema:hover {
+    transform: scale(1.05);
+}

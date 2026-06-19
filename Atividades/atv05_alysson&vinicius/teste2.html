@@ -8,7 +8,9 @@
 
     <link rel="icon" type="image/x-icon" href="img/img_vinicius/icom.ico">
     <link rel="stylesheet" href="css/estrutura.css">
-    <link rel="stylesheet" href="css/estilos.css" id="estilos">
+    <link rel="stylesheet" href="css/estilov.css" media="none" id="estilov">
+    <link rel="stylesheet" href="css/estiloa.css" media="none" id="estiloa">
+    <link rel="stylesheet" href="css/estilos.css">
     
     <script>
 
@@ -36,13 +38,23 @@
 
     function temas() {
     const body = document.getElementById("corpo");
+    const botao = document.getElementById("botao-tema");
 
-    body.classList.toggle("temaa");
-    body.classList.toggle("temav");
+    body.classList.toggle("tema-a");
+    body.classList.toggle("tema-v");
 
-    if (document.getElementById('botao-tema').textContent == "Tema A") document.getElementById('botoes-tema').textContent = "Tema V";
-    else document.getElementById('botao-tema').textContent = "Tema A";
+    if (body.classList.contains("tema-a")) {
+        botao.innerHTML = "Tema V";
+    } else {
+        botao.innerHTML = "Tema A";
+    }
 }
+
+            console.log("V:", temav.disabled, "A:", temaa.disabled);
+
+            if (!temav.disabled) document.getElementById('botao-tema').innerHTML = 'Tema A';
+            else document.getElementById('botao-tema').innerHTML = 'Tema V';
+        }
         function myFunction(ativo, ativo2) {
         
         var y = document.getElementsByClassName("texto");
@@ -64,7 +76,7 @@
 
 
 </head>
-<body id="corpo" class="temav">
+<body id="corpo">
 
     <noscript>
     <div style="background: red; color: white; padding: 20px; text-align: center;">

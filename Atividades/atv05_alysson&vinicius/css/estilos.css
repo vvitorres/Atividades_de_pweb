@@ -1,0 +1,102 @@
+/* =========================
+   TEMA V
+   ========================= */
+
+   #corpo.temav {
+    background-image: url(../img/img_vinicius/fundo_geral2.png);
+}
+
+#corpo.temav #cabecalho {
+    color: #FFD700;
+    background-color: #1a1a1a;
+}
+
+#corpo.temav .barra_lateral {
+    background-color: #2d0000;
+}
+
+#corpo.temav #rodape {
+    background-color: #1a1a1a;
+    color: #E0E0E0;
+}
+
+
+#corpo.temav #conteudo {
+    background-color: #2d0000;
+}
+
+
+/* =========================
+   TEMA A
+   ========================= */
+
+#corpo.temaa {
+    background-image: url(../img/img_alysson/background.jpg);
+}
+
+#corpo.temaa #cabecalho {
+    color: #FFD166;
+    background-color: #0D1B2A;
+}
+
+#corpo.temaa .barra_lateral {
+    background-color: #D9D9D9;
+}
+
+#corpo.temaa #rodape {
+    background-image: url(../img/img_alysson/footer.jpeg);
+    background-size: contain;
+    color: #FFD166;
+}
+
+#corpo.temaa #conteudo {
+    background-color: #D9D9D9
+}
+
+
+/* =========================
+   COMUM AOS DOIS TEMAS
+   ========================= */
+
+.meu_container {
+    background-color: rgb(245, 245, 236);
+}
+
+#capa {
+    background-color: #FFD700;
+}
+
+#texto-capa {
+    color: black;
+}
+
+.fundo_fosco {
+    background-color: #536678b3;
+}
+
+.texto_hobbies {
+    background-color: #536678b3;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#texto-hobbies,
+#texto-curriculos,
+#texto-temas,
+#texto-curriculo,
+#texto-curriculo2,
+#texto-musicas {
+    color: #B0B0B0;
+}
+
+#conteudo {
+    background-color: #2d0000;
+}
+
+.conteudo_zbranco {
+    background-image: url(../img/img_vinicius/fundo_curriculo.png);
+}
+
+.conteudo_zazul {
+    background-image: url(../img/img_vinicius/fundo_robbies.png);
+}

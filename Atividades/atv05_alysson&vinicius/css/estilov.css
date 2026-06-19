@@ -11,7 +11,7 @@
             
         }
         .barra_lateral { /*classe*/
-            background-color: #2d0000; /*Muda a cor do plano de fundo da barra lateral*/
+            background-color: #D9D9D9; /*Muda a cor do plano de fundo da barra lateral*/
         }
         #capa { /*id*/
             background-color:#FFD700; /*Muda a cor do plano de fundo do botão currículo*/
@@ -30,6 +30,12 @@
         }
         #texto-hobbies { /*id*/
             color: #B0B0B0; /*Muda a cor do texto do botão hobbies*/
+        }
+        #texto-curriculos {
+        color: #B0B0B0;
+        }
+        #texto-temas {
+        color: #B0B0B0;
         }
         #texto-curriculo {
             color: #B0B0B0; /*Muda a cor do texto do botão currículo*/
