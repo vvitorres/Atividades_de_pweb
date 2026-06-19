@@ -39,6 +39,7 @@
         #rodape { /*id*/
             height: 90px; /*Ajeita a altura total do rodapé*/
         }
+        
         .conteudo_zbranco {
             width: 100%; 
             background-size: 60%; 
@@ -47,7 +48,7 @@
         }
         .conteudo_zazul {
             width: 100%; 
-            background-size: 100%; 
+            background-size: 60%; 
             background-attachment: fixed; 
             text-align: center;
         }

@@ -70,12 +70,7 @@
     color: black;
 }
 
-.fundo_fosco {
-    background-color: #536678b3;
-}
-
 .texto_hobbies {
-    background-color: #536678b3;
     font-size: 150%;
     font-weight: bold;
 }
@@ -96,7 +91,6 @@
 .conteudo_zbranco {
     background-image: url(../img/img_vinicius/fundo_curriculo.png);
 }
-
-.conteudo_zazul {
-    background-image: url(../img/img_vinicius/fundo_robbies.png);
-}
+.imagem_zbranco {
+           background-image: url(../img/img_vinicius/fundo_curriculo.png);  
+        }
