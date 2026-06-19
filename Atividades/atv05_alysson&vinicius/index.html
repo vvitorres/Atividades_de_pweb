@@ -44,16 +44,28 @@
     else document.getElementById('botao-tema').textContent = "Tema A";
 }
         function myFunction(ativo, ativo2) {
-        
-        var y = document.getElementsByClassName("texto");
-        var x = document.getElementsByClassName("botoes");
-        for (var i = 0; i < x.length; i++) {
-            
-            x[i].style.backgroundColor = "#2d0000";
-            y[i].style.color = "#B0B0B0";
+        if (document.getElementById('botao-tema').textContent == "Tema V") {
+            var y = document.getElementsByClassName("texto");
+            var x = document.getElementsByClassName("botoes");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.backgroundColor = "#D9D9D9";
+                y[i].style.color = "#B0B0B0";
+            }
+
+            document.getElementById(ativo).style.backgroundColor='gray';
+            document.getElementById(ativo2).style.color='black';
+        } else {
+            var y = document.getElementsByClassName("texto");
+            var x = document.getElementsByClassName("botoes");
+            for (var i = 0; i < x.length; i++) {
+                
+                x[i].style.backgroundColor = "#2d0000";
+                y[i].style.color = "#B0B0B0";
+            }
+            document.getElementById(ativo).style.backgroundColor='#FFD700';
+            document.getElementById(ativo2).style.color='black';
         }
-        document.getElementById(ativo).style.backgroundColor='#FFD700';
-        document.getElementById(ativo2).style.color='black';
+
     }
 
     function mostrarBotoes(id) {
