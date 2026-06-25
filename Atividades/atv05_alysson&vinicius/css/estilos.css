@@ -1,3 +1,9 @@
+/*
+Vitor Vinícius Porangaba Torres
+Alysson Matheus de Souza Rodrigues
+Jordana da Silva Ferro
+ATV 05 - 513 */
+
 /* =========================
    TEMA V
    ========================= */
@@ -21,7 +27,7 @@
 }
 
 #corpo.temav #conteudo {
-    background-color: #2d0000;
+    background-image: url(../img/img_vinicius/fundo_curriculo.png);
 }
 
 #corpo.temav .botaoativo {
@@ -29,6 +35,14 @@
     background-color: #FFD700;
 }
 
+#corpo.temav .botaoinativo {
+    color: #B0B0B0;
+}
+
+#corpo.temav #botao-tema {
+    background-color: #FFD700;
+    color: #2d0000;
+}
 
 /* =========================
    TEMA A
@@ -54,7 +68,7 @@
 }
 
 #corpo.temaa #conteudo {
-    background-color: #D9D9D9;
+    background-color: white;
 }
 
 #corpo.temaa .botaoativo {
@@ -62,40 +76,11 @@
     background-color: #3A86FF;
 }
 
-
-/* =========================
-   COMUM AOS DOIS TEMAS
-   ========================= */
-
-.meu_container {
-    background-color: rgb(245, 245, 236);
-}
-
-#capa {
-    background-color: #FFD700;
-}
-
-#texto-capa {
+#corpo.temaa .botaoinativo {
     color: black;
 }
 
-.texto_hobbies {
-    font-size: 150%;
-    font-weight: bold;
+#corpo.temaa #botao-tema {
+    background-color: #3A86FF;
+    color: #D9D9D9;
 }
-
-#texto-hobbies,
-#texto-curriculos,
-#texto-temas,
-#texto-curriculo,
-#texto-curriculo2,
-#texto-musicas {
-    color: #B0B0B0;
-}
-
-.conteudo_zbranco {
-    background-image: url(../img/img_vinicius/fundo_curriculo.png);
-}
-.imagem_zbranco {
-           background-image: url(../img/img_vinicius/fundo_curriculo.png);  
-        }
